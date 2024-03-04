@@ -1,0 +1,109 @@
+.sun__body{
+    background-color: black;
+}
+
+
+.sun_card{
+    position: relative;
+    margin-top: 100px;
+    width: 400px;
+    height: 600px;
+    background-color:rgb(242, 177, 93) ;
+    border-radius: 200px 200px 5% 5%;
+    overflow: hidden;
+
+}
+.sun_left-earth{
+    position: absolute;
+    bottom: -35%;
+    left: -50%;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: rgba(216, 142, 46, 0.964) ;
+
+    animation-name: sun-left;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes sun-left{
+    from {
+        bottom: -100%;
+            left: -100%;
+
+    }
+    to {
+        bottom: 10;
+            left: -50;
+            
+    
+        }
+    
+}
+
+.sun_right-earth{
+    position: absolute;
+    bottom: -25%;
+    right: -50%;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: rgb(88, 23, 23);
+    animation-name: sun-right;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes sun-right {
+    from {
+        bottom: -100%;
+        right: -100%;
+
+    }
+
+    to {
+        bottom: 10;
+        right: -50;
+
+
+    }
+
+}
+
+
+.sun{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: yellow;
+    bottom: 150px;
+    left: 30%;
+    animation-name: sun;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes sun {
+    from {
+        bottom: -100%;
+        right: -100%;
+
+    }
+
+    to {
+        bottom: 60%;
+        right: 50%;
+
+
+    }
+
+}

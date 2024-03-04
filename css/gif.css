@@ -1,0 +1,242 @@
+.gif__body{
+    background-color: brown;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_gif {
+    background-color: black;
+}
+.gif{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.gif__top{
+    display: flex;
+}
+.gif__top__left{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 15px solid white;
+    background-color: brown;
+    border-radius: 50% 50% 0 50%;
+    animation-name: gift-left;
+    animation-duration: 6s;
+    animation-iteration-count:1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes gift-left{
+    0% {
+    top: -100px;
+        left: -100px;
+        opacity: 0;
+    }
+    
+    50% {
+
+        top: 0;
+        left: 0;
+        opacity: 1;
+        
+    }
+    100%{
+        top: -100px;
+        left: -100px;
+        opacity: 0;
+    }
+}
+
+.gif__top__right{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 15px solid white;
+    background-color: brown;
+    border-radius: 50% 50% 50% 0;
+    animation-name: gift-right;
+    animation-duration: 6s;
+    animation-iteration-count:1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes gift-right {
+    0% {
+    top: -100px;
+        right: -100px;
+        opacity: 0;
+    }
+    
+    50% {
+
+        top: 0;
+        right: 0;
+        opacity: 1;
+        
+    }
+    100%{
+        top: -100px;
+        right: -100px;
+        opacity: 0;
+    }
+}
+
+
+.gif__bottom{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.gif__card{
+    width: 45%;
+    height: 45%;
+    background-color: white;
+}
+
+
+.card_1{
+    position: relative;
+    animation-name: card-1;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes card-1{
+     0% {
+    top: -100px;
+        left: -100px;
+        opacity: 0;
+    }
+
+        50% {
+    
+            top: 5%;
+            left: 5%;
+            opacity: 1;
+    
+        }
+    
+    100% {
+
+        top: 0;
+        left: 0;
+        opacity: 1;
+        
+    }
+}
+
+.card_2 {
+    position: relative;
+    animation-name: card-2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes card-2 {
+    0% {
+        top: -100px;
+        right: -100px;
+        opacity: 0;
+    }
+
+    50% {
+
+        top: 5%;
+        right: 5%;
+        opacity: 1;
+
+    }
+
+    100% {
+
+        top: 0;
+        right: 0;
+        opacity: 1;
+
+    }
+}
+
+
+.card_3 {
+    position: relative;
+    animation-name: card-3;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes card-3 {
+    0% {
+        bottom: -100px;
+        left: -100px;
+        opacity: 0;
+    }
+
+    50% {
+
+        bottom: 5%;
+        left: 5%;
+        opacity: 1;
+
+    }
+
+    100% {
+
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+
+    }
+}
+
+.card_4 {
+    position: relative;
+    animation-name: card-4;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes card-4 {
+    0% {
+        bottom: -100px;
+        right: -100px;
+        opacity: 0;
+    }
+
+    50% {
+
+        bottom: 5%;
+        right: 5%;
+        opacity: 1;
+
+    }
+
+    100% {
+
+        bottom: 0;
+        right: 0;
+        opacity: 1;
+
+    }
+}
